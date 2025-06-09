@@ -30,6 +30,12 @@
   }
 }
 
+@layer components {
+    .ui-button {
+	@apply z-1 cursor-pointer rounded-4xl font-semibold text-sm text-background bg-gray-900 hover:bg-gray-800 dark:bg-gray-700 dark:hover:bg-gray-600 h-10 px-5;
+    }
+}
+
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;

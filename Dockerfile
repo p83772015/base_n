@@ -4,7 +4,7 @@ WORKDIR /app
 
 # Bootstrap nextjs
 RUN apt-get update && apt-get install -y --no-install-recommends \
-    redis-tools && \		# For docker compose healthcheck
+    redis-tools && \
     rm -rf /var/lib/apt/lists/* && \
     bun create next-app . \
     --ts \
