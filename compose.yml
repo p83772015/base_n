@@ -1,0 +1,32 @@
+services:
+  cache:
+    image: redis:latest
+    healthcheck:
+      test: ["CMD-SHELL", "redis-cli ping | grep PONG"]
+      interval: 1s
+      timeout: 3s
+      retries: 5
+    networks:
+      - basen
+    command: ["redis-server"]
+
+  app:
+    depends_on:
+      cache:
+        condition: service_healthy
+    build:
+      context: .
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./public:/app/public
+      - ./app:/app/app
+      - ./postcss.config.mjs:/app/postcss.config.mjs
+      - ./next.config.ts:/app/next.config.ts
+      - ./tsconfig.json:/app/tsconfig.json
+      - ./tailwind.config.ts:/app/tailwind.config.ts
+    networks:
+      - basen
+
+networks:
+  basen:
