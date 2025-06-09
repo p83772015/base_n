@@ -68,7 +68,7 @@ Yes, please do! See [CONTRIBUTING][] for guidelines.
 
 ## License
 
-See [COPYING][]. Copyright (c) 2025 Solis et al.
+See [COPYING][]. Copyright (c) 2025 Solis Patrick, Cañeta Angelo, Torres Jefferson, Talib Mojin, Barrios Leslie, Zaldua Ian, Orbita Christian.
 
 
 [CONTRIBUTING]: ./CONTRIBUTING.md
