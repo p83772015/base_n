@@ -26,7 +26,7 @@ To dive into the fun, follow these steps:
 
 1. **Install Docker Desktop**: 
    - Go to the [Docker Desktop website](https://www.docker.com/products/docker-desktop).
-   - Click on the "Get Docker" button and follow the instructions to download and install Docker Desktop on your computer. Just follow the prompts, and it will set everything up for you, including WSL if needed.
+   - Click on the "Download Docker Desktop" button and follow the instructions to download and install Docker Desktop on your computer. Just follow the prompts, and it will set everything up for you, including WSL if needed.
 
 2. **Download the Game**: 
    - Click on the "Code" button on this repository page.
