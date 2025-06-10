@@ -34,18 +34,20 @@ export default function Card({
     }
   }
 
-  function renderLives(lives) {
-    heartsArray = [];
-    for (let i = 0; i < lives; ++i) {
-      heartsArray.push();
-    }
-    return heartsArray;
+  function RenderLives(lives) {
+    return (
+      <span>
+	{Array.from({ length: lives }).map((_, i) => (
+	  <span key={i} aria-label="life" role="img">❤️</span>
+	))}
+      </span>
+    );
   }
 
   return (
     <div className="h-full grid grid-flow-row grid-rows-[50px_80px_2fr_2fr_1fr] @container">
       <div className="grid grid-cols-2">
-	<p className="justify-self-left font-[family-name:var(--font-geist-mono)]">Lives: {lives}</p>
+	<p className="justify-self-left font-[family-name:var(--font-geist-mono)]">Lives: {RenderLives(lives)}</p>
 	<p className="justify-self-end font-[family-name:var(--font-geist-mono)]">Score: {score}</p>
       </div>
       <div className="content-center">
