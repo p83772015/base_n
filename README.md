@@ -2,7 +2,7 @@
 
 ## Overview
 
-Welcome to Base_n, an exciting Next.js web application that tests your
+Welcome to Base_n, an exciting web application that tests your
 skills in converting numbers across different number systems!
 
 In this game, you'll face a series of questions designed to challenge
